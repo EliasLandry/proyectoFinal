@@ -1,0 +1,283 @@
+/* estilos generales */
+html{
+    font-family: 'Rajdhani', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px
+}
+/* header */
+.header {
+    display:flex;
+    justify-content: flex-start;
+    background-color:#fff;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    height: 80px;
+}
+.header nav{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 0;
+    margin-left: 10px;
+    height: 100%;
+}
+#logo {
+    color: #3A4979;
+    padding-left: 15px;
+    padding-top: 4px;
+    font-family: 'Rajdhani', sans-serif;
+}
+.botonnav {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    align-content:center;
+    padding: auto 30px;
+}
+.botonnav a {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    align-content: center;
+    color:#3A4979;
+    text-decoration: none;
+    padding: 0 30px;
+    height: 100%;
+}
+.botonnav a:hover{
+    color:#fff;
+    background-color:#3A4979;
+}
+.navUL{
+    display:flex; 
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+    height:100%;
+    width: 100%;
+}
+/* estilos de index  */
+.gridMain{
+    display:grid;
+    grid-template-areas: "banner"
+                        "seccionJuegos";
+    grid-template-rows: 400px 1fr;
+}
+.fotobanner{
+    background-image: url("multimedia/FIFA22main.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: none;
+    background-position: top center;
+    grid-area: banner;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 240px;
+    border-radius: 5%;
+    padding: 10px;
+    transition: transform .3s ease-in;
+
+}
+.card:hover {
+    transform: scale(1.05,1.05);
+}
+.card img {
+    max-width: 230px;
+    border-radius: 2%;
+}
+.card h4{
+    padding-top: 7px;
+    font-size: 1.3em;
+    color: #3A4979;
+}
+.card p {
+    padding: 5px 5px;
+    color: #fff;
+    background-color: #4e68be;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+}
+.ListaJuegos{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 100px;
+}
+.juegosCtn{
+    display: flex;
+    flex-direction: column;
+    grid-area:seccionJuegos;
+    min-width: 100%;
+    max-width: 100%;
+    height: px;
+}
+
+/* Estilo de pagina Contacto y Preguntas Frecuentes*/
+
+.subtitulo{
+    background-color: #3A4979;
+    color: #fff;
+    text-align: center;
+    height: 90px;
+    padding-top: 10px;
+
+}
+.h2Estilos{
+    text-align: center;
+    padding-top: 10px;
+}
+ a {
+     color: #6385f5;
+ }
+.textodepag{
+    text-align: center;
+    padding-top: 2px;
+    color:#464646;
+}
+.titulo_textodepag{
+    text-align:center;
+    font-size:20px;
+    padding: 7px;
+    margin: 10px;
+    
+}
+
+.titulos {
+    color:#3A4979 ;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+.tableHeaders {
+    background-color: #143EC1;
+    color: #fff;
+    padding: 7px;
+}
+.celdas {
+    background-color: #b9c6ec;
+    text-align: center;
+    padding: 10px;
+    
+}
+.listaOrdenada{
+    list-style: none;
+    padding: 0;
+}
+
+.mediosdepago{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+footer {
+    background-color: #3A4979;
+    color:#fff;
+    display:grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+.LadoIzq{
+    display:flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+    
+
+}
+.LadoDer{
+    display:flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.LadoIzq p {
+    margin: 5px;
+}
+/* Estilos de la pagina Ayuda */
+.formularioCtn{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    align-content: center;
+    padding: 20px;
+    margin: auto auto;
+}
+.flexItem {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.flexItem input{
+    background-color:#3A4979;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 15px;
+    width: 300px;
+    margin-top: 5px;
+}
+.flexItem input::placeholder{
+    color: #7189d6;
+}
+.btnForm {
+    display: flex;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #3A4979;
+    color: #fff;
+    border-radius: 8px;
+}
+/* Estilos de pagina Tienda */
+
+.TiendaCtn{
+    display: flex;
+    flex-direction: column;
+    grid-area:seccionJuegos;
+    min-width: 100%;
+    max-width: 100%;
+    height: px;
+}
+
+.TiendaCtn_ListaJuegos{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 100px;
+    }
+
+.tituloYbuscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tituloYbuscador input{
+    margin-right: 10px;
+    border: 1px solid rgb(134, 134, 134);
+    outline: none;
+    border-radius: 10px;
+    padding:7px;
+    margin-top: 13px;
+    transition: width 1.0s ease-in;
+}
+.tituloYbuscador input:focus:hover{
+    width: 300px;
+}
